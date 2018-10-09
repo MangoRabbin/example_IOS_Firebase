@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D925BCE399832A026D3F22CBB4B2B5B5"
+               BlueprintIdentifier = "CF86008F0C708878CBADCB1FA511D1DA"
                BlueprintName = "Pods-mangoFirebaseLogin"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "Pods-mangoFirebaseLogin.framework">
