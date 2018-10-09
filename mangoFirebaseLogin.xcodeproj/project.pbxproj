@@ -12,6 +12,8 @@
 		0FA97153216CBF74005732EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FA97151216CBF74005732EA /* Main.storyboard */; };
 		0FA97155216CBF76005732EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FA97154216CBF76005732EA /* Assets.xcassets */; };
 		0FA97158216CBF76005732EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FA97156216CBF76005732EA /* LaunchScreen.storyboard */; };
+		0FA97160216CC005005732EA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FA9715F216CC005005732EA /* GoogleService-Info.plist */; };
+		7071F5114875D14C097E7B80 /* Pods_mangoFirebaseLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28388F247AB33D62FDFEC4A3 /* Pods_mangoFirebaseLogin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		0FA97154216CBF76005732EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FA97157216CBF76005732EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0FA97159216CBF76005732EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FA9715F216CC005005732EA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		28388F247AB33D62FDFEC4A3 /* Pods_mangoFirebaseLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mangoFirebaseLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E3CDCAD7AB2736CB6C9F94D /* Pods-mangoFirebaseLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mangoFirebaseLogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-mangoFirebaseLogin/Pods-mangoFirebaseLogin.release.xcconfig"; sourceTree = "<group>"; };
+		C9DC3EABF9ED00B733567952 /* Pods-mangoFirebaseLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mangoFirebaseLogin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mangoFirebaseLogin/Pods-mangoFirebaseLogin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7071F5114875D14C097E7B80 /* Pods_mangoFirebaseLogin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				0FA9714C216CBF74005732EA /* mangoFirebaseLogin */,
 				0FA9714B216CBF74005732EA /* Products */,
+				3C35FA68477CCCFF31EF8EB2 /* Pods */,
+				1F63D6EC219B226FF3B8AE8F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +69,26 @@
 				0FA97154216CBF76005732EA /* Assets.xcassets */,
 				0FA97156216CBF76005732EA /* LaunchScreen.storyboard */,
 				0FA97159216CBF76005732EA /* Info.plist */,
+				0FA9715F216CC005005732EA /* GoogleService-Info.plist */,
 			);
 			path = mangoFirebaseLogin;
+			sourceTree = "<group>";
+		};
+		1F63D6EC219B226FF3B8AE8F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28388F247AB33D62FDFEC4A3 /* Pods_mangoFirebaseLogin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C35FA68477CCCFF31EF8EB2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C9DC3EABF9ED00B733567952 /* Pods-mangoFirebaseLogin.debug.xcconfig */,
+				9E3CDCAD7AB2736CB6C9F94D /* Pods-mangoFirebaseLogin.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0FA9715C216CBF76005732EA /* Build configuration list for PBXNativeTarget "mangoFirebaseLogin" */;
 			buildPhases = (
+				45040554FF65ECD9FE570A63 /* [CP] Check Pods Manifest.lock */,
 				0FA97146216CBF74005732EA /* Sources */,
 				0FA97147216CBF74005732EA /* Frameworks */,
 				0FA97148216CBF74005732EA /* Resources */,
+				AA3532D4C64782485774B18E /* [CP] Embed Pods Frameworks */,
+				23E2A79477FA7E880E18D3FE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,12 +153,90 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FA97158216CBF76005732EA /* LaunchScreen.storyboard in Resources */,
+				0FA97160216CC005005732EA /* GoogleService-Info.plist in Resources */,
 				0FA97155216CBF76005732EA /* Assets.xcassets in Resources */,
 				0FA97153216CBF74005732EA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23E2A79477FA7E880E18D3FE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-mangoFirebaseLogin/Pods-mangoFirebaseLogin-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mangoFirebaseLogin/Pods-mangoFirebaseLogin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45040554FF65ECD9FE570A63 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mangoFirebaseLogin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA3532D4C64782485774B18E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-mangoFirebaseLogin/Pods-mangoFirebaseLogin-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mangoFirebaseLogin/Pods-mangoFirebaseLogin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0FA97146216CBF74005732EA /* Sources */ = {
@@ -280,6 +388,7 @@
 		};
 		0FA9715D216CBF76005732EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9DC3EABF9ED00B733567952 /* Pods-mangoFirebaseLogin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +407,7 @@
 		};
 		0FA9715E216CBF76005732EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E3CDCAD7AB2736CB6C9F94D /* Pods-mangoFirebaseLogin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
